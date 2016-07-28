@@ -23,6 +23,23 @@ final class CalendarViewController: UIViewController {
             let defaults = NSUserDefaults.standardUserDefaults()
             defaults.setObject(selectedDates?.startDate, forKey: "firstRedDay")
             defaults.setObject(selectedDates?.endDate, forKey: "lastRedDay")
+            
+            let calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
+            
+            if let oldStartDate = oldValue?.startDate,
+                oldEndDate = oldValue?.endDate {
+                let oldDateRange = DateRange(calendar: calendar, startDate: oldStartDate.dayBefore, endDate: oldEndDate,
+                                             stepUnits: .Day, stepValue: 1)
+                oldDateRange.forEach { self.calendarView.deselectDate($0) }
+            }
+            
+            guard let startDate = selectedDates?.startDate,
+                endDate = selectedDates?.endDate else { return }
+            
+            let dateRange = DateRange(calendar: calendar, startDate: startDate, endDate: endDate,
+                                      stepUnits: .Day, stepValue: 1)
+            
+            dateRange.forEach { self.calendarView.selectDate($0) }
         }
     }
    
@@ -46,9 +63,6 @@ final class CalendarViewController: UIViewController {
         guard let firstRedDay = defaults.objectForKey("firstRedDay") as? NSDate,
             lastDay = defaults.objectForKey("lastRedDay") as? NSDate?
             else { return }
-        
-        calendarView.firstRedDay =  firstRedDay
-        calendarView.lastRedDay = lastDay
     }
     
     override func viewDidLayoutSubviews() {
@@ -109,20 +123,44 @@ extension CalendarViewController: CalendarViewDataSource, CalendarViewDelegate {
         return self.calendarView.gregorian.dateByAddingComponents(dateComponents, toDate: NSDate(), options: NSCalendarOptions())
     }
     
+    private func onDateSelect(date: NSDate) {
+        guard let selectedDates = selectedDates else {
+            self.selectedDates = (date, nil)
+            return
+        }
+        
+        if let startDate = selectedDates.startDate, endDate = selectedDates.startDate {
+            if date.day < startDate.day {
+                self.selectedDates?.startDate = date
+            } else if date.day > startDate.day || date.day > endDate.day || date.day < endDate.day {
+                self.selectedDates?.endDate = date
+            }
+        } else if let _ = selectedDates.startDate {
+            self.selectedDates?.endDate = date
+        } else {
+            self.selectedDates = (date, nil)
+        }
+    }
+    
     func calendar(calendar: CalendarView, didSelectDate date: NSDate, withEvents events: [EKEvent]) {
-        selectedDates = (calendarView.firstRedDay, calendarView.lastRedDay)
+        onDateSelect(date)
+    }
+    
+    func calendar(calendar: CalendarView, didDeselectDate date: NSDate) {
+        onDateSelect(date)
     }
     
     func calendar(calendar: CalendarView, didScrollToMonth date : NSDate) {
+        guard let startDate = selectedDates?.startDate,
+            endDate = selectedDates?.endDate else { return }
+        let numberOfDays = startDate < date ? cycle : -cycle
+        selectedDates = (startDate.dateByAddingDays(numberOfDays), endDate.dateByAddingDays(numberOfDays))
         
     }
 }
 
 extension CalendarViewController: AlertShowable {
     func confirmationButtonTapped() {
-        calendarView.firstRedDay = nil
-        calendarView.lastRedDay = nil
         selectedDates = nil
-        calendarView.removeSelectedDates()
     }
 }

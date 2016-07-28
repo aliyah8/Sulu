@@ -168,6 +168,8 @@
 				BEFD65541ACC072000ADE917 /* AppDelegate.swift */,
 				BEFD65561ACC072000ADE917 /* CalendarViewController.swift */,
 				1E3DB1281D37B746001E8E51 /* NSDate+Tools.swift */,
+				1E3DB12A1D38B6AA001E8E51 /* FirstViewController.swift */,
+				1E3DB12E1D38E94C001E8E51 /* DictionaryViewController.swift */,
 				BEFD65581ACC072000ADE917 /* Main.storyboard */,
 				BEFD655B1ACC072000ADE917 /* Images.xcassets */,
 				BEFD655D1ACC072000ADE917 /* LaunchScreen.xib */,
@@ -210,8 +212,6 @@
 				C7C16A6C1CBBE536004DC8CF /* CalendarDayCell.swift */,
 				C7C16A6D1CBBE536004DC8CF /* CalendarFlowLayout.swift */,
 				C7C16A6E1CBBE536004DC8CF /* CalendarHeaderView.swift */,
-				1E3DB12A1D38B6AA001E8E51 /* FirstViewController.swift */,
-				1E3DB12E1D38E94C001E8E51 /* DictionaryViewController.swift */,
 			);
 			name = CalendarView;
 			sourceTree = "<group>";
