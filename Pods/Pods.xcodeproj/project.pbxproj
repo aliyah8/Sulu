@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A0DFEDB4033EC0A6CDE4DAB9E396EC5 /* Pods-KDCalendarTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4460AA1013E72D96EDF1DE0A8B5A7FA9 /* Pods-KDCalendarTests-dummy.m */; };
+		38E058E1FF4EDC958BF5CF02A1A7FBD3 /* Pods-KDCalendarTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 08A5B02C8A800AAE8F4FE19C36938345 /* Pods-KDCalendarTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F05D24FB4E0B528A03C20149A334A31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		5A82FBD348E15178C2864C8A7590C510 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		CF30EE2666D0E03F88E56FF6C6D1F181 /* Pods-KDCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 549942BB043BDE86F9D3B188B4091E42 /* Pods-KDCalendar-dummy.m */; };
+		E3C61104768A21F3A77423833A6CBA73 /* Pods-KDCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DA4F5683A2076D22258A29CB62CA483 /* Pods-KDCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0306CFFD7F68864CDE701D2637200C94 /* BackendlessCachePolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessCachePolicy.h; path = SDK/ios/backendless/include/BackendlessCachePolicy.h; sourceTree = "<group>"; };
+		032FD30DA28C6ADDA6DB5538576174A5 /* Pods-KDCalendar-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KDCalendar-frameworks.sh"; sourceTree = "<group>"; };
+		03FDD7B5533E298755DC303EA9ACDB2D /* Pods-KDCalendar-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KDCalendar-acknowledgements.markdown"; sourceTree = "<group>"; };
+		075898425232B9F3E3E2F0F5423160D9 /* Pods-KDCalendarTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KDCalendarTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		078195582ADE42472F1729851CBAA8DF /* IRTMProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IRTMProtocol.h; path = SDK/ios/CommLibiOS/include/IRTMProtocol.h; sourceTree = "<group>"; };
+		084D6B28D9AC6610448868B48B0E8648 /* Pods_KDCalendarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KDCalendarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08A5B02C8A800AAE8F4FE19C36938345 /* Pods-KDCalendarTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KDCalendarTests-umbrella.h"; sourceTree = "<group>"; };
+		093548ECF3EB8269993EF0BC4121EB1C /* Logging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Logging.h; path = SDK/ios/backendless/include/Logging.h; sourceTree = "<group>"; };
+		0F8FFFE6F7AA8C279F1AAFFB3305A112 /* Pods-KDCalendarTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KDCalendarTests.modulemap"; sourceTree = "<group>"; };
+		10DD6BF017F28E5E8A6C70F2119964A4 /* IServiceCall.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IServiceCall.h; path = SDK/ios/CommLibiOS/include/IServiceCall.h; sourceTree = "<group>"; };
+		13498CA8DB110C539065568F85E54048 /* FileService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FileService.h; path = SDK/ios/backendless/include/FileService.h; sourceTree = "<group>"; };
+		15072CD4B57BD09630B742FD91129CD0 /* BodyParts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BodyParts.h; path = SDK/ios/backendless/include/BodyParts.h; sourceTree = "<group>"; };
+		1F457C13466A4476391CFA2A687A80B2 /* AtomicCountersFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AtomicCountersFactory.h; path = SDK/ios/backendless/include/AtomicCountersFactory.h; sourceTree = "<group>"; };
+		239BE48E8652A400888F072E1EFCD172 /* BEFileInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEFileInfo.h; path = SDK/ios/backendless/include/BEFileInfo.h; sourceTree = "<group>"; };
+		25781BAC9B143569796262E97FD315C1 /* PersistenceService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PersistenceService.h; path = SDK/ios/backendless/include/PersistenceService.h; sourceTree = "<group>"; };
+		2B51266C475818E0DED8A24B4F553468 /* MemoryTicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MemoryTicker.h; path = SDK/ios/CommLibiOS/include/MemoryTicker.h; sourceTree = "<group>"; };
+		3A3F04A655936E0CC0345170015A8A74 /* PublishOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PublishOptions.h; path = SDK/ios/backendless/include/PublishOptions.h; sourceTree = "<group>"; };
+		3B5DE05AEAAA0EC269C918601E5FA9D4 /* IClientSharedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IClientSharedObject.h; path = SDK/ios/CommLibiOS/include/IClientSharedObject.h; sourceTree = "<group>"; };
+		3C2CC006C094D16182601AACEC83DD36 /* LocationTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LocationTracker.h; path = SDK/ios/backendless/include/LocationTracker.h; sourceTree = "<group>"; };
+		3CF37F619F4C1620914800EA634E1FEB /* GeoCluster.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GeoCluster.h; path = SDK/ios/backendless/include/GeoCluster.h; sourceTree = "<group>"; };
+		3ED566464B4641630A5869D78217E9EE /* AtomicCounters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AtomicCounters.h; path = SDK/ios/backendless/include/AtomicCounters.h; sourceTree = "<group>"; };
+		415BDE2CDB33D258AA3F18572DC798EF /* MessagingService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MessagingService.h; path = SDK/ios/backendless/include/MessagingService.h; sourceTree = "<group>"; };
+		4460AA1013E72D96EDF1DE0A8B5A7FA9 /* Pods-KDCalendarTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KDCalendarTests-dummy.m"; sourceTree = "<group>"; };
+		48BFBD79E1A82EB34EA06B8A3F662A5A /* Pods-KDCalendarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KDCalendarTests.debug.xcconfig"; sourceTree = "<group>"; };
+		49D73E3D08CA6A951B8E18E4645F954C /* CacheService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CacheService.h; path = SDK/ios/backendless/include/CacheService.h; sourceTree = "<group>"; };
+		4B6C554B81B775FAC4550B9688A3E3A2 /* FilePermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FilePermission.h; path = SDK/ios/backendless/include/FilePermission.h; sourceTree = "<group>"; };
+		4EB249C83FB622813D07A78B5610F917 /* Message.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Message.h; path = SDK/ios/backendless/include/Message.h; sourceTree = "<group>"; };
+		4FCB8A703552F738BD0DF6E366AD191B /* CacheFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CacheFactory.h; path = SDK/ios/backendless/include/CacheFactory.h; sourceTree = "<group>"; };
+		549942BB043BDE86F9D3B188B4091E42 /* Pods-KDCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KDCalendar-dummy.m"; sourceTree = "<group>"; };
+		55FABFA14FFFFA94A1718EE48F9D2398 /* FlashorbBinaryWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlashorbBinaryWriter.h; path = SDK/ios/CommLibiOS/include/FlashorbBinaryWriter.h; sourceTree = "<group>"; };
+		5747BD559B0B2BE461618F19179D3E86 /* WeborbClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WeborbClient.h; path = SDK/ios/CommLibiOS/include/WeborbClient.h; sourceTree = "<group>"; };
+		5DA4F5683A2076D22258A29CB62CA483 /* Pods-KDCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KDCalendar-umbrella.h"; sourceTree = "<group>"; };
+		5F994363810FC2A21179D02193353F2C /* Backendless-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Backendless-Bridging-Header.h"; path = "SDK/ios/backendless/include/Backendless-Bridging-Header.h"; sourceTree = "<group>"; };
+		645A1AE211413D4D47BE0E12ADFF58CD /* SubscriptionOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SubscriptionOptions.h; path = SDK/ios/backendless/include/SubscriptionOptions.h; sourceTree = "<group>"; };
+		697457C5297954A2CD26ADD0ACD90CD6 /* Responder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Responder.h; path = SDK/ios/CommLibiOS/include/Responder.h; sourceTree = "<group>"; };
+		6983BA8487DDE46E48733DDBE9937055 /* DeviceRegistration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DeviceRegistration.h; path = SDK/ios/backendless/include/DeviceRegistration.h; sourceTree = "<group>"; };
+		6E1DFA0A0DA30FE60CDB2E4BD5B7BAA6 /* Pods-KDCalendarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KDCalendarTests.release.xcconfig"; sourceTree = "<group>"; };
+		730EFD6895BAF84F591B9747ECBB6C50 /* Presence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Presence.h; path = SDK/ios/backendless/include/Presence.h; sourceTree = "<group>"; };
+		79A248E2FF747A75DD002799798E0636 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A9074DE6ABA8204D15D818E62E40B8D /* MessageStatus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MessageStatus.h; path = SDK/ios/backendless/include/MessageStatus.h; sourceTree = "<group>"; };
+		7C9FB5063CD91F5BAE6AEBA9F233A533 /* ICacheService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ICacheService.h; path = SDK/ios/backendless/include/ICacheService.h; sourceTree = "<group>"; };
+		7CB7F8AAE34FFA748F63C12525709EB5 /* RTMPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTMPClient.h; path = SDK/ios/CommLibiOS/include/RTMPClient.h; sourceTree = "<group>"; };
+		88B307BAFF0FD5218F1E50422112E57E /* DEBUG.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DEBUG.h; path = SDK/ios/CommLibiOS/include/DEBUG.h; sourceTree = "<group>"; };
+		8A44C727E3E61C1634B58D53B90FF47C /* Logger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Logger.h; path = SDK/ios/backendless/include/Logger.h; sourceTree = "<group>"; };
+		8B3851AC749A58276CAB262573C2B5EC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F48B0FFCA9AC5B8728B6D2A5DB9F730 /* BackendlessDataQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessDataQuery.h; path = SDK/ios/backendless/include/BackendlessDataQuery.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		966D175DF6BBCA3924B1AC3E11D38652 /* ObjectProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjectProperty.h; path = SDK/ios/backendless/include/ObjectProperty.h; sourceTree = "<group>"; };
+		97DBA307B6FD5F1F5B09820084283BDB /* BECollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BECollectionView.h; path = SDK/ios/backendless/include/BECollectionView.h; sourceTree = "<group>"; };
+		9813B15ED780198BC763564A1118E875 /* IAttributeStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IAttributeStore.h; path = SDK/ios/CommLibiOS/include/IAttributeStore.h; sourceTree = "<group>"; };
+		A17BE46E2280CE8C0D146248C1805DB7 /* Types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Types.h; path = SDK/ios/CommLibiOS/include/Types.h; sourceTree = "<group>"; };
+		A5699AFEB4E749AB330BB44FCF9AF182 /* ICallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ICallback.h; path = SDK/ios/backendless/include/ICallback.h; sourceTree = "<group>"; };
+		A59006FF6608054BBC0E5353ECDAED41 /* BackendlessGeoQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessGeoQuery.h; path = SDK/ios/backendless/include/BackendlessGeoQuery.h; sourceTree = "<group>"; };
+		A5EC92227A7E98948BFE934C7168E2FC /* CustomService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CustomService.h; path = SDK/ios/backendless/include/CustomService.h; sourceTree = "<group>"; };
+		AA73FEB2095A5E24B12BD3BE961DE7AC /* AbstractQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AbstractQuery.h; path = SDK/ios/backendless/include/AbstractQuery.h; sourceTree = "<group>"; };
+		B2466A67579125A7C4008EDB2B199D57 /* BackendlessUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessUser.h; path = SDK/ios/backendless/include/BackendlessUser.h; sourceTree = "<group>"; };
+		B5111B8FA9A1B5D787C74BEAD6AE8183 /* Pods-KDCalendar-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KDCalendar-acknowledgements.plist"; sourceTree = "<group>"; };
+		B57D2DEA76625891D83ED022AF019749 /* Backendless.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Backendless.h; path = SDK/ios/backendless/include/Backendless.h; sourceTree = "<group>"; };
+		B5A5798F1D7640C12C01A41F05D3CADC /* Pods-KDCalendar-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KDCalendar-resources.sh"; sourceTree = "<group>"; };
+		B5BC4D869309D0E9D5200D02BB95A7CB /* GeoFence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GeoFence.h; path = SDK/ios/backendless/include/GeoFence.h; sourceTree = "<group>"; };
+		B88696C124A12746A94BFE80E04A8AAC /* Pods-KDCalendarTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KDCalendarTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B9925D9F719E9436EB669D72806EB5AF /* BackendlessEntity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessEntity.h; path = SDK/ios/backendless/include/BackendlessEntity.h; sourceTree = "<group>"; };
+		BF10CD51AFCA192B9E8FB85359266C74 /* IClientSharedObjectDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IClientSharedObjectDelegate.h; path = SDK/ios/CommLibiOS/include/IClientSharedObjectDelegate.h; sourceTree = "<group>"; };
+		C1BE5AD542BCAC7391167F79E9645A0C /* AbstractProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AbstractProperty.h; path = SDK/ios/backendless/include/AbstractProperty.h; sourceTree = "<group>"; };
+		C1F8E5391A97583A04AA146D9A66650C /* UserService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UserService.h; path = SDK/ios/backendless/include/UserService.h; sourceTree = "<group>"; };
+		C28CD6752BB4A0673CB85B62DB55C9F6 /* Pods-KDCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-KDCalendar.modulemap"; sourceTree = "<group>"; };
+		C4470EB773AF5C2CD84C52D3C72EEBEA /* Pods-KDCalendarTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KDCalendarTests-frameworks.sh"; sourceTree = "<group>"; };
+		CD1D65EE58EC39FA1B4C50982D3FF44C /* DataStoreFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DataStoreFactory.h; path = SDK/ios/backendless/include/DataStoreFactory.h; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D0678FD843844E33DB605D1FECB244E1 /* HashMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HashMap.h; path = SDK/ios/backendless/include/HashMap.h; sourceTree = "<group>"; };
+		D15DA74DCA688051B81565A5D8241987 /* QueryOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QueryOptions.h; path = SDK/ios/backendless/include/QueryOptions.h; sourceTree = "<group>"; };
+		D2267A564A86081B421755808E7AEF0E /* UserProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UserProperty.h; path = SDK/ios/backendless/include/UserProperty.h; sourceTree = "<group>"; };
+		D40831335A150663E50188292E7EAF65 /* Pods_KDCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KDCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5DDBD3086688E246425CB0D6C95AEE3 /* ISharedObjectListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ISharedObjectListener.h; path = SDK/ios/CommLibiOS/include/ISharedObjectListener.h; sourceTree = "<group>"; };
+		D74D68989A7B92C8A1207A8AEEF0DE19 /* BEMapView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMapView.h; path = SDK/ios/backendless/include/BEMapView.h; sourceTree = "<group>"; };
+		D9402CC8E6841FE2745C962E31971C9A /* FlashorbBinaryReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FlashorbBinaryReader.h; path = SDK/ios/CommLibiOS/include/FlashorbBinaryReader.h; sourceTree = "<group>"; };
+		DBA15575BDEBD33B4D537D0D836DBCAA /* BinaryCodec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BinaryCodec.h; path = SDK/ios/CommLibiOS/include/BinaryCodec.h; sourceTree = "<group>"; };
+		DC71419D3A9D78CA24A16E53482FBA96 /* BackendlessCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessCollection.h; path = SDK/ios/backendless/include/BackendlessCollection.h; sourceTree = "<group>"; };
+		DD9F76DC20D4270240FC845C4F3BC8E1 /* BackendlessFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessFile.h; path = SDK/ios/backendless/include/BackendlessFile.h; sourceTree = "<group>"; };
+		E0AF464F4F02D54E873748FAF0D29D6E /* BinaryStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BinaryStream.h; path = SDK/ios/CommLibiOS/include/BinaryStream.h; sourceTree = "<group>"; };
+		E238591CAB5EFD0060ED913E010742D2 /* BackendlessSimpleQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessSimpleQuery.h; path = SDK/ios/backendless/include/BackendlessSimpleQuery.h; sourceTree = "<group>"; };
+		E3DC733F2B6EB94E3036DC5348E8DFB8 /* IDataStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IDataStore.h; path = SDK/ios/backendless/include/IDataStore.h; sourceTree = "<group>"; };
+		E45F32C6B60C58D3C89E208266207836 /* BackendlessCacheProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessCacheProtocol.h; path = SDK/ios/backendless/include/BackendlessCacheProtocol.h; sourceTree = "<group>"; };
+		E4602AD8D0E8B3BF56BB08832B1B0BBD /* DeliveryOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DeliveryOptions.h; path = SDK/ios/backendless/include/DeliveryOptions.h; sourceTree = "<group>"; };
+		E5A834137B14743A9C71941FC95D3B35 /* BESubscription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BESubscription.h; path = SDK/ios/backendless/include/BESubscription.h; sourceTree = "<group>"; };
+		E6E4B27AAE5F7BD8054B4729A979F15C /* Events.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Events.h; path = SDK/ios/backendless/include/Events.h; sourceTree = "<group>"; };
+		E8C4F2BA721959A0622A27D762566D2A /* ProtectedBackendlessGeoQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ProtectedBackendlessGeoQuery.h; path = SDK/ios/backendless/include/ProtectedBackendlessGeoQuery.h; sourceTree = "<group>"; };
+		ED7BF72B2E1ABAAD06FFDFD4E31F8BD2 /* IPendingServiceCallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IPendingServiceCallback.h; path = SDK/ios/CommLibiOS/include/IPendingServiceCallback.h; sourceTree = "<group>"; };
+		EDBAD2961008E7DCCB5FFF03D1CE88DB /* IPersistable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IPersistable.h; path = SDK/ios/CommLibiOS/include/IPersistable.h; sourceTree = "<group>"; };
+		EF1264BABADE3A8DB86C1D6378AAE47B /* Backendless-With-Media-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Backendless-With-Media-Bridging-Header.h"; path = "SDK/ios/backendless/include/Backendless-With-Media-Bridging-Header.h"; sourceTree = "<group>"; };
+		EF5792B6AC76637D0F1E27FA3A797E2A /* GeoService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GeoService.h; path = SDK/ios/backendless/include/GeoService.h; sourceTree = "<group>"; };
+		F12FB3DBCC9BDB6C1F9458F3EC428FB7 /* BETableView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BETableView.h; path = SDK/ios/backendless/include/BETableView.h; sourceTree = "<group>"; };
+		F168B4C94C40BCC0935C01A915AB7759 /* Pods-KDCalendarTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KDCalendarTests-resources.sh"; sourceTree = "<group>"; };
+		F1AC502628FB840B3BA3E73F9E560B46 /* AMFSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AMFSerializer.h; path = SDK/ios/CommLibiOS/include/AMFSerializer.h; sourceTree = "<group>"; };
+		F3D820B3C7550EA28B2DD22F2D8D4A53 /* DataPermission.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DataPermission.h; path = SDK/ios/backendless/include/DataPermission.h; sourceTree = "<group>"; };
+		F4B02CB3FF3089BDFADB4083090277A0 /* BackendlessBeacon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BackendlessBeacon.h; path = SDK/ios/backendless/include/BackendlessBeacon.h; sourceTree = "<group>"; };
+		F5835EBEC394103A64047E7588F14844 /* BEAnnotation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEAnnotation.h; path = SDK/ios/backendless/include/BEAnnotation.h; sourceTree = "<group>"; };
+		F618B7997358F2F556DF47BD075361EF /* IPresenceListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IPresenceListener.h; path = SDK/ios/backendless/include/IPresenceListener.h; sourceTree = "<group>"; };
+		F701B567A8CD60B0F97EC6792736BBDB /* GeoPoint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GeoPoint.h; path = SDK/ios/backendless/include/GeoPoint.h; sourceTree = "<group>"; };
+		F9861890A3664254EB9A5C18C4904690 /* Pods-KDCalendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KDCalendar.release.xcconfig"; sourceTree = "<group>"; };
+		F9B7BC1B8383A110DF73077B78CB73D7 /* GeoCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GeoCategory.h; path = SDK/ios/backendless/include/GeoCategory.h; sourceTree = "<group>"; };
+		FC83D203EAEE9A7A0C5A64766BDEF1E1 /* IAtomicCounters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IAtomicCounters.h; path = SDK/ios/backendless/include/IAtomicCounters.h; sourceTree = "<group>"; };
+		FEAA3AD526657FFA8476C24A23EF5A8B /* Pods-KDCalendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KDCalendar.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B87B1DA50E79413F115CA9C118BB70D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F05D24FB4E0B528A03C20149A334A31 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82C5486F5F419E86161512855A085EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A82FBD348E15178C2864C8A7590C510 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		431592F8C8B2C6D2110CB149FD708518 /* Backendless */ = {
+			isa = PBXGroup;
+			children = (
+				C1BE5AD542BCAC7391167F79E9645A0C /* AbstractProperty.h */,
+				AA73FEB2095A5E24B12BD3BE961DE7AC /* AbstractQuery.h */,
+				F1AC502628FB840B3BA3E73F9E560B46 /* AMFSerializer.h */,
+				3ED566464B4641630A5869D78217E9EE /* AtomicCounters.h */,
+				1F457C13466A4476391CFA2A687A80B2 /* AtomicCountersFactory.h */,
+				B57D2DEA76625891D83ED022AF019749 /* Backendless.h */,
+				5F994363810FC2A21179D02193353F2C /* Backendless-Bridging-Header.h */,
+				EF1264BABADE3A8DB86C1D6378AAE47B /* Backendless-With-Media-Bridging-Header.h */,
+				F4B02CB3FF3089BDFADB4083090277A0 /* BackendlessBeacon.h */,
+				0306CFFD7F68864CDE701D2637200C94 /* BackendlessCachePolicy.h */,
+				E45F32C6B60C58D3C89E208266207836 /* BackendlessCacheProtocol.h */,
+				DC71419D3A9D78CA24A16E53482FBA96 /* BackendlessCollection.h */,
+				8F48B0FFCA9AC5B8728B6D2A5DB9F730 /* BackendlessDataQuery.h */,
+				B9925D9F719E9436EB669D72806EB5AF /* BackendlessEntity.h */,
+				DD9F76DC20D4270240FC845C4F3BC8E1 /* BackendlessFile.h */,
+				A59006FF6608054BBC0E5353ECDAED41 /* BackendlessGeoQuery.h */,
+				E238591CAB5EFD0060ED913E010742D2 /* BackendlessSimpleQuery.h */,
+				B2466A67579125A7C4008EDB2B199D57 /* BackendlessUser.h */,
+				F5835EBEC394103A64047E7588F14844 /* BEAnnotation.h */,
+				97DBA307B6FD5F1F5B09820084283BDB /* BECollectionView.h */,
+				239BE48E8652A400888F072E1EFCD172 /* BEFileInfo.h */,
+				D74D68989A7B92C8A1207A8AEEF0DE19 /* BEMapView.h */,
+				E5A834137B14743A9C71941FC95D3B35 /* BESubscription.h */,
+				F12FB3DBCC9BDB6C1F9458F3EC428FB7 /* BETableView.h */,
+				DBA15575BDEBD33B4D537D0D836DBCAA /* BinaryCodec.h */,
+				E0AF464F4F02D54E873748FAF0D29D6E /* BinaryStream.h */,
+				15072CD4B57BD09630B742FD91129CD0 /* BodyParts.h */,
+				4FCB8A703552F738BD0DF6E366AD191B /* CacheFactory.h */,
+				49D73E3D08CA6A951B8E18E4645F954C /* CacheService.h */,
+				A5EC92227A7E98948BFE934C7168E2FC /* CustomService.h */,
+				F3D820B3C7550EA28B2DD22F2D8D4A53 /* DataPermission.h */,
+				CD1D65EE58EC39FA1B4C50982D3FF44C /* DataStoreFactory.h */,
+				88B307BAFF0FD5218F1E50422112E57E /* DEBUG.h */,
+				E4602AD8D0E8B3BF56BB08832B1B0BBD /* DeliveryOptions.h */,
+				6983BA8487DDE46E48733DDBE9937055 /* DeviceRegistration.h */,
+				E6E4B27AAE5F7BD8054B4729A979F15C /* Events.h */,
+				4B6C554B81B775FAC4550B9688A3E3A2 /* FilePermission.h */,
+				13498CA8DB110C539065568F85E54048 /* FileService.h */,
+				D9402CC8E6841FE2745C962E31971C9A /* FlashorbBinaryReader.h */,
+				55FABFA14FFFFA94A1718EE48F9D2398 /* FlashorbBinaryWriter.h */,
+				F9B7BC1B8383A110DF73077B78CB73D7 /* GeoCategory.h */,
+				3CF37F619F4C1620914800EA634E1FEB /* GeoCluster.h */,
+				B5BC4D869309D0E9D5200D02BB95A7CB /* GeoFence.h */,
+				F701B567A8CD60B0F97EC6792736BBDB /* GeoPoint.h */,
+				EF5792B6AC76637D0F1E27FA3A797E2A /* GeoService.h */,
+				D0678FD843844E33DB605D1FECB244E1 /* HashMap.h */,
+				FC83D203EAEE9A7A0C5A64766BDEF1E1 /* IAtomicCounters.h */,
+				9813B15ED780198BC763564A1118E875 /* IAttributeStore.h */,
+				7C9FB5063CD91F5BAE6AEBA9F233A533 /* ICacheService.h */,
+				A5699AFEB4E749AB330BB44FCF9AF182 /* ICallback.h */,
+				3B5DE05AEAAA0EC269C918601E5FA9D4 /* IClientSharedObject.h */,
+				BF10CD51AFCA192B9E8FB85359266C74 /* IClientSharedObjectDelegate.h */,
+				E3DC733F2B6EB94E3036DC5348E8DFB8 /* IDataStore.h */,
+				ED7BF72B2E1ABAAD06FFDFD4E31F8BD2 /* IPendingServiceCallback.h */,
+				EDBAD2961008E7DCCB5FFF03D1CE88DB /* IPersistable.h */,
+				F618B7997358F2F556DF47BD075361EF /* IPresenceListener.h */,
+				078195582ADE42472F1729851CBAA8DF /* IRTMProtocol.h */,
+				10DD6BF017F28E5E8A6C70F2119964A4 /* IServiceCall.h */,
+				D5DDBD3086688E246425CB0D6C95AEE3 /* ISharedObjectListener.h */,
+				3C2CC006C094D16182601AACEC83DD36 /* LocationTracker.h */,
+				8A44C727E3E61C1634B58D53B90FF47C /* Logger.h */,
+				093548ECF3EB8269993EF0BC4121EB1C /* Logging.h */,
+				2B51266C475818E0DED8A24B4F553468 /* MemoryTicker.h */,
+				4EB249C83FB622813D07A78B5610F917 /* Message.h */,
+				7A9074DE6ABA8204D15D818E62E40B8D /* MessageStatus.h */,
+				415BDE2CDB33D258AA3F18572DC798EF /* MessagingService.h */,
+				966D175DF6BBCA3924B1AC3E11D38652 /* ObjectProperty.h */,
+				25781BAC9B143569796262E97FD315C1 /* PersistenceService.h */,
+				730EFD6895BAF84F591B9747ECBB6C50 /* Presence.h */,
+				E8C4F2BA721959A0622A27D762566D2A /* ProtectedBackendlessGeoQuery.h */,
+				3A3F04A655936E0CC0345170015A8A74 /* PublishOptions.h */,
+				D15DA74DCA688051B81565A5D8241987 /* QueryOptions.h */,
+				697457C5297954A2CD26ADD0ACD90CD6 /* Responder.h */,
+				7CB7F8AAE34FFA748F63C12525709EB5 /* RTMPClient.h */,
+				645A1AE211413D4D47BE0E12ADFF58CD /* SubscriptionOptions.h */,
+				A17BE46E2280CE8C0D146248C1805DB7 /* Types.h */,
+				D2267A564A86081B421755808E7AEF0E /* UserProperty.h */,
+				C1F8E5391A97583A04AA146D9A66650C /* UserService.h */,
+				5747BD559B0B2BE461618F19179D3E86 /* WeborbClient.h */,
+			);
+			path = Backendless;
+			sourceTree = "<group>";
+		};
+		49C663537539E1926FFBAA402B7EBC5E /* Pods-KDCalendarTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B3851AC749A58276CAB262573C2B5EC /* Info.plist */,
+				0F8FFFE6F7AA8C279F1AAFFB3305A112 /* Pods-KDCalendarTests.modulemap */,
+				B88696C124A12746A94BFE80E04A8AAC /* Pods-KDCalendarTests-acknowledgements.markdown */,
+				075898425232B9F3E3E2F0F5423160D9 /* Pods-KDCalendarTests-acknowledgements.plist */,
+				4460AA1013E72D96EDF1DE0A8B5A7FA9 /* Pods-KDCalendarTests-dummy.m */,
+				C4470EB773AF5C2CD84C52D3C72EEBEA /* Pods-KDCalendarTests-frameworks.sh */,
+				F168B4C94C40BCC0935C01A915AB7759 /* Pods-KDCalendarTests-resources.sh */,
+				08A5B02C8A800AAE8F4FE19C36938345 /* Pods-KDCalendarTests-umbrella.h */,
+				48BFBD79E1A82EB34EA06B8A3F662A5A /* Pods-KDCalendarTests.debug.xcconfig */,
+				6E1DFA0A0DA30FE60CDB2E4BD5B7BAA6 /* Pods-KDCalendarTests.release.xcconfig */,
+			);
+			name = "Pods-KDCalendarTests";
+			path = "Target Support Files/Pods-KDCalendarTests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				854514C7A274207FEEFB02A648DCB25F /* Pods */,
+				DE90037D844AAE725B27056B153E87D5 /* Products */,
+				C1F865F3740FAF4EB37113912E0B7CFD /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		854514C7A274207FEEFB02A648DCB25F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				431592F8C8B2C6D2110CB149FD708518 /* Backendless */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B288E9F04C5D280741AF5E6093DF6CAE /* Pods-KDCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				79A248E2FF747A75DD002799798E0636 /* Info.plist */,
+				C28CD6752BB4A0673CB85B62DB55C9F6 /* Pods-KDCalendar.modulemap */,
+				03FDD7B5533E298755DC303EA9ACDB2D /* Pods-KDCalendar-acknowledgements.markdown */,
+				B5111B8FA9A1B5D787C74BEAD6AE8183 /* Pods-KDCalendar-acknowledgements.plist */,
+				549942BB043BDE86F9D3B188B4091E42 /* Pods-KDCalendar-dummy.m */,
+				032FD30DA28C6ADDA6DB5538576174A5 /* Pods-KDCalendar-frameworks.sh */,
+				B5A5798F1D7640C12C01A41F05D3CADC /* Pods-KDCalendar-resources.sh */,
+				5DA4F5683A2076D22258A29CB62CA483 /* Pods-KDCalendar-umbrella.h */,
+				FEAA3AD526657FFA8476C24A23EF5A8B /* Pods-KDCalendar.debug.xcconfig */,
+				F9861890A3664254EB9A5C18C4904690 /* Pods-KDCalendar.release.xcconfig */,
+			);
+			name = "Pods-KDCalendar";
+			path = "Target Support Files/Pods-KDCalendar";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C1F865F3740FAF4EB37113912E0B7CFD /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B288E9F04C5D280741AF5E6093DF6CAE /* Pods-KDCalendar */,
+				49C663537539E1926FFBAA402B7EBC5E /* Pods-KDCalendarTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		DE90037D844AAE725B27056B153E87D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D40831335A150663E50188292E7EAF65 /* Pods_KDCalendar.framework */,
+				084D6B28D9AC6610448868B48B0E8648 /* Pods_KDCalendarTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		758B24541C76A161A0EB0791860800FD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3C61104768A21F3A77423833A6CBA73 /* Pods-KDCalendar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0F396269713B9E62A9DC30B6EED85CD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38E058E1FF4EDC958BF5CF02A1A7FBD3 /* Pods-KDCalendarTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A5F49BC4F2850B95C9E8015C9C28F1A6 /* Pods-KDCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50348154B1D6D93D6AE1F5B788F01DFF /* Build configuration list for PBXNativeTarget "Pods-KDCalendar" */;
+			buildPhases = (
+				929945A7A04EA29052967E0156231ABC /* Sources */,
+				F82C5486F5F419E86161512855A085EE /* Frameworks */,
+				758B24541C76A161A0EB0791860800FD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-KDCalendar";
+			productName = "Pods-KDCalendar";
+			productReference = D40831335A150663E50188292E7EAF65 /* Pods_KDCalendar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A617AD9B57142BDAE3B313FB11D3E32E /* Pods-KDCalendarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDA9C35635D7015C167DF944CE59D9CC /* Build configuration list for PBXNativeTarget "Pods-KDCalendarTests" */;
+			buildPhases = (
+				F9D85323161B7F3BDBC54DCAF1241045 /* Sources */,
+				B87B1DA50E79413F115CA9C118BB70D0 /* Frameworks */,
+				F0F396269713B9E62A9DC30B6EED85CD /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-KDCalendarTests";
+			productName = "Pods-KDCalendarTests";
+			productReference = 084D6B28D9AC6610448868B48B0E8648 /* Pods_KDCalendarTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = DE90037D844AAE725B27056B153E87D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5F49BC4F2850B95C9E8015C9C28F1A6 /* Pods-KDCalendar */,
+				A617AD9B57142BDAE3B313FB11D3E32E /* Pods-KDCalendarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		929945A7A04EA29052967E0156231ABC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF30EE2666D0E03F88E56FF6C6D1F181 /* Pods-KDCalendar-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9D85323161B7F3BDBC54DCAF1241045 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0DFEDB4033EC0A6CDE4DAB9E396EC5 /* Pods-KDCalendarTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		03438F996A64DD0692A31D8D5D529441 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E1DFA0A0DA30FE60CDB2E4BD5B7BAA6 /* Pods-KDCalendarTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KDCalendarTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KDCalendarTests/Pods-KDCalendarTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_KDCalendarTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		129C21624317793456868C93E41668B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEAA3AD526657FFA8476C24A23EF5A8B /* Pods-KDCalendar.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KDCalendar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KDCalendar/Pods-KDCalendar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_KDCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2588EA364419D831347938453F4F6DE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		39E53ADF0EB5232DA55804A50344313C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48BFBD79E1A82EB34EA06B8A3F662A5A /* Pods-KDCalendarTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KDCalendarTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KDCalendarTests/Pods-KDCalendarTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_KDCalendarTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		61AD4929AC3440F8BFA0595E8DCD90C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D62C5CEF93A91EAFD528DE1B2702E90C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9861890A3664254EB9A5C18C4904690 /* Pods-KDCalendar.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-KDCalendar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KDCalendar/Pods-KDCalendar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_KDCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2588EA364419D831347938453F4F6DE5 /* Debug */,
+				61AD4929AC3440F8BFA0595E8DCD90C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50348154B1D6D93D6AE1F5B788F01DFF /* Build configuration list for PBXNativeTarget "Pods-KDCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				129C21624317793456868C93E41668B6 /* Debug */,
+				D62C5CEF93A91EAFD528DE1B2702E90C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDA9C35635D7015C167DF944CE59D9CC /* Build configuration list for PBXNativeTarget "Pods-KDCalendarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				39E53ADF0EB5232DA55804A50344313C /* Debug */,
+				03438F996A64DD0692A31D8D5D529441 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

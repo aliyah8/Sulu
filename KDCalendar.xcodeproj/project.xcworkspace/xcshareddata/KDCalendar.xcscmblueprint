@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "087811D9999EC639BE6EB35E71107BD0E1F2E9D4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "54451070F549D6C37EBBF650D9C974872E3B6C88" : 0,
+    "087811D9999EC639BE6EB35E71107BD0E1F2E9D4" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "895C261C-22DA-4A09-86F3-F3D8527C2244",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "54451070F549D6C37EBBF650D9C974872E3B6C88" : "kdcalendar",
+    "087811D9999EC639BE6EB35E71107BD0E1F2E9D4" : "Kal\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "KDCalendar",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "KDCalendar.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/klazuka\/Kal.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "087811D9999EC639BE6EB35E71107BD0E1F2E9D4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:mmick66\/kdcalendar.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "54451070F549D6C37EBBF650D9C974872E3B6C88"
+    }
+  ]
+}
