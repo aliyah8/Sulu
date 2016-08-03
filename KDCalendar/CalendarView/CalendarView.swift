@@ -462,6 +462,8 @@ class CalendarView: UIView, UICollectionViewDataSource, UICollectionViewDelegate
     
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    
+        
         
         guard let dateBeingSelectedByUser = dateBeingSelectedByUser else {
             return
@@ -500,11 +502,12 @@ class CalendarView: UIView, UICollectionViewDataSource, UICollectionViewDelegate
         selectedDates.removeAtIndex(index)
         
     }
-    
+   
     
     func reloadData() {
         self.calendarView.reloadData()
     }
+    
     
     
     func setDisplayDate(date : NSDate, animated: Bool) {
