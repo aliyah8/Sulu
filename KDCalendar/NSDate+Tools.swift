@@ -51,6 +51,11 @@ extension NSDate {
         calendar.timeZone = NSTimeZone.systemTimeZone()
         return calendar.component(.Day, fromDate: self)
     }
+    var month: Int {
+        let calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
+        calendar.timeZone = NSTimeZone.systemTimeZone()
+        return calendar.component(.Month, fromDate: self)
+    }
     var dayBefore: NSDate {
         return dateByAddingDays(-1)
     }

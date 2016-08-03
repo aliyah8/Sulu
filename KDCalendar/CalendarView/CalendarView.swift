@@ -52,12 +52,7 @@ class CalendarView: UIView, UICollectionViewDataSource, UICollectionViewDelegate
     var delegate    : CalendarViewDelegate?
     
     lazy var gregorian : NSCalendar = {
-        
-        let cal = NSCalendar(identifier: NSCalendarIdentifierGregorian)!
-        
-        cal.timeZone = NSTimeZone.systemTimeZone()
-        
-        return cal
+        return NSCalendar(identifier: NSCalendarIdentifierGregorian)!
     }()
     
     var calendar : NSCalendar {
