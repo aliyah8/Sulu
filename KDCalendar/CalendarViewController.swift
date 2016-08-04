@@ -144,6 +144,7 @@ extension CalendarViewController: CalendarViewDataSource, CalendarViewDelegate {
             } else if date.day > startDate.day || date.day > endDate.day || date.day < endDate.day {
                 firstSelectedDates.endDate = date
             }
+        
 
             let defaults = NSUserDefaults.standardUserDefaults()
             defaults.setObject(firstSelectedDates.startDate, forKey: "firstRedDay")

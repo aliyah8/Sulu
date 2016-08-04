@@ -494,9 +494,9 @@ class CalendarView: UIView, UICollectionViewDataSource, UICollectionViewDelegate
         delegate?.calendar?(self, didDeselectDate: selectedDates[index])
         if index < selectedIndexPaths.count {
         selectedIndexPaths.removeAtIndex(index)
-        } else {
-        selectedDates.removeAtIndex(index)
         }
+        selectedDates.removeAtIndex(index)
+        
     }
    
     
