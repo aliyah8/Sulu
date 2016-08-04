@@ -141,7 +141,7 @@ extension CalendarViewController: CalendarViewDataSource, CalendarViewDelegate {
         if let startDate = firstSelectedDates.startDate, endDate = firstSelectedDates.startDate {
             if date.day < startDate.day {
                 firstSelectedDates.startDate = date
-            } else if date.day > startDate.day || date.day > endDate.day || date.day < endDate.day {
+            } else if date.day > startDate.day || date.day > endDate.day {
                 firstSelectedDates.endDate = date
             }
         
@@ -156,8 +156,9 @@ extension CalendarViewController: CalendarViewDataSource, CalendarViewDelegate {
             firstSelectedDates = (date, nil)
         }
         
-        selectedDates?.insert(firstSelectedDates, atIndex: 0)
-        
+        //selectedDates?.insert(firstSelectedDates, atIndex: 0)
+            
+        selectedDates = [firstSelectedDates]
         if let startDate = firstSelectedDates.startDate, endDate = firstSelectedDates.endDate {
             selectedDates?.append(generateNextDates(startDate, endDate))
         }
