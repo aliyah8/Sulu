@@ -24,10 +24,19 @@ final class CalendarViewController: UIViewController {
         didSet {
             let calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
             oldValue?.forEach {
-                if let oldStartDate = $0.startDate, oldEndDate = $0.endDate {
-                    let oldDateRange = DateRange(calendar: calendar, startDate:
-                        oldStartDate.dayBefore, endDate: oldEndDate, stepUnits: .Day, stepValue: 1)
-                    oldDateRange.forEach { self.calendarView.deselectDate($0) }
+                guard let oldStartDate = $0.startDate,
+                    oldEndDate = $0.endDate else { return }
+                
+                let oldDateRange = DateRange(calendar: calendar, startDate:
+                    oldStartDate.dayBefore, endDate: oldEndDate, stepUnits: .Day, stepValue: 1)
+                oldDateRange.forEach { self.calendarView.deselectDate($0) }
+                
+                let startFlowerDate = oldEndDate.dateByAddingDays(0),
+                endFlowerDate = oldStartDate.dateByAddingDays(16)
+                let flowerRange = DateRange(calendar: calendar, startDate: startFlowerDate, endDate: endFlowerDate, stepUnits: .Day, stepValue: 1)
+                
+                flowerRange.forEach{ flower in
+                    calendarView.unflowerDate(flower)
                 }
             }
           
@@ -40,6 +49,7 @@ final class CalendarViewController: UIViewController {
                 let startFlowerDate = endDate.dateByAddingDays(0),
                     endFlowerDate = startDate.dateByAddingDays(16)
                 let flowerRange = DateRange(calendar: calendar, startDate: startFlowerDate, endDate: endFlowerDate, stepUnits: .Day, stepValue: 1)
+
                 flowerRange.forEach{ flower in
                     calendarView.flowerDate(flower)
                 }

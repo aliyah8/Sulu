@@ -462,6 +462,30 @@ class CalendarView: UIView, UICollectionViewDataSource, UICollectionViewDelegate
         
     }
     
+    func unflowerDate(date : NSDate) {
+        
+        guard let indexPath = self.indexPathForDate(date) else {
+            return
+        }
+        
+        guard self.flowerIndexPaths.contains(indexPath) == true else {
+            return
+        }
+        
+        guard let cell = self.calendarView.cellForItemAtIndexPath(indexPath) as? CalendarDayCell else {
+            return
+        }
+        cell.flower = false
+        
+        guard let index = flowerIndexPaths.indexOf(indexPath) else {
+            return
+        }
+        
+        flowerIndexPaths.removeAtIndex(index)
+        flowerDates.removeAtIndex(index)
+        
+    }
+    
     func indexPathForDate(date : NSDate) -> NSIndexPath? {
         
         let distanceFromStartComponent = self.gregorian.components( [.Month, .Day], fromDate:startOfMonthCache, toDate: date, options: NSCalendarOptions() )
