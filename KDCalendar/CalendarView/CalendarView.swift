@@ -77,6 +77,8 @@ class CalendarView: UIView, UICollectionViewDataSource, UICollectionViewDelegate
     private(set) var selectedIndexPaths : [NSIndexPath] = [NSIndexPath]()
     private(set) var selectedDates : [NSDate] = [NSDate]()
     
+    private(set) var flowerIndexPaths : [NSIndexPath] = [NSIndexPath]()
+    private(set) var flowerDates : [NSDate] = [NSDate]()
     
     private var eventsByIndexPath : [NSIndexPath:[EKEvent]] = [NSIndexPath:[EKEvent]]()
     var events : [EKEvent]? {
@@ -296,6 +298,7 @@ class CalendarView: UIView, UICollectionViewDataSource, UICollectionViewDelegate
         }
         
         dayCell.selected = selectedIndexPaths.contains(indexPath)
+        dayCell.flower = flowerIndexPaths.contains(indexPath)
         
         if indexPath.section == 0 && indexPath.item == 0 {
             self.scrollViewDidEndDecelerating(collectionView)
@@ -436,6 +439,26 @@ class CalendarView: UIView, UICollectionViewDataSource, UICollectionViewDelegate
         selectedIndexPaths.removeAtIndex(index)
         selectedDates.removeAtIndex(index)
         
+        
+    }
+    
+    func flowerDate(date : NSDate) {
+        
+        guard let indexPath = self.indexPathForDate(date) else {
+            return
+        }
+        
+        guard self.flowerIndexPaths.contains(indexPath) == false else {
+            return
+        }
+
+        guard let cell = self.calendarView.cellForItemAtIndexPath(indexPath) as? CalendarDayCell else {
+            return
+        }
+        cell.flower = true
+        
+        flowerIndexPaths.append(indexPath)
+        flowerDates.append(date)
         
     }
     

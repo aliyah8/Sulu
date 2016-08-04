@@ -80,6 +80,12 @@ class CalendarDayCell: UICollectionViewCell {
         }
     }
     
+    var flower: Bool = false {
+        didSet {
+            flowerImageView.hidden = !flower
+        }
+    }
+    
      lazy var pBackgroundView : UIView = {
         
         var vFrame = CGRectInset(self.frame, 6.0, 6.0)

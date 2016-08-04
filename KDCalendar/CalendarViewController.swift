@@ -36,11 +36,13 @@ final class CalendarViewController: UIViewController {
                     endDate = $0.endDate else { return }
                 let dateRange = DateRange(calendar: calendar, startDate: startDate.dayBefore,
                     endDate: endDate, stepUnits: .Day, stepValue: 1)
-              //  guard let startFlowerDate = endDate.dateByAddingDays(0),
-              //      endFlowerDate = startDate.dateByAddingDays(16) else { return }
-       //         let flowerRange = dateRange(calendar: calendar, startDate: startFlowerDate, endDate: endFlowerDate, stepUnits: .Day, stepValue: 1)
-         //       flowerRange.forEach {
-        //        print(flowerRange)
+                
+                let startFlowerDate = endDate.dateByAddingDays(0),
+                    endFlowerDate = startDate.dateByAddingDays(16)
+                let flowerRange = DateRange(calendar: calendar, startDate: startFlowerDate, endDate: endFlowerDate, stepUnits: .Day, stepValue: 1)
+                flowerRange.forEach{ flower in
+                    calendarView.flowerDate(flower)
+                }
                 
           //      }
                 //    guard let startFlowerDate = $0.endDate!.dateByAddingDays(0),
