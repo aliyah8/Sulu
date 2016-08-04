@@ -23,7 +23,6 @@ final class CalendarViewController: UIViewController {
     private var selectedDates: [(startDate: NSDate?, endDate: NSDate?)]? {
         didSet {
             let calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
-            
             oldValue?.forEach {
                 if let oldStartDate = $0.startDate, oldEndDate = $0.endDate {
                     let oldDateRange = DateRange(calendar: calendar, startDate:
@@ -31,24 +30,35 @@ final class CalendarViewController: UIViewController {
                     oldDateRange.forEach { self.calendarView.deselectDate($0) }
                 }
             }
-            
+          
             selectedDates?.forEach {
                 guard let startDate = $0.startDate,
                     endDate = $0.endDate else { return }
-                
                 let dateRange = DateRange(calendar: calendar, startDate: startDate.dayBefore,
                     endDate: endDate, stepUnits: .Day, stepValue: 1)
+              //  guard let startFlowerDate = endDate.dateByAddingDays(0),
+              //      endFlowerDate = startDate.dateByAddingDays(16) else { return }
+       //         let flowerRange = dateRange(calendar: calendar, startDate: startFlowerDate, endDate: endFlowerDate, stepUnits: .Day, stepValue: 1)
+         //       flowerRange.forEach {
+        //        print(flowerRange)
+                
+          //      }
+                //    guard let startFlowerDate = $0.endDate!.dateByAddingDays(0),
+              //      endFlowerDate = $0.startDate!.dateByAddingDays(16) else { return }
+               // let flowerRange = DateRange(calendar: calendar, startDate: startFlowerDate, endDate: endFlowerDate, stepUnits: .Day, stepValue: 1)
+                
+                //flowerRange.forEach { self.calendarView.selectDate($0) }
+               // print(flowerRange)
+                
                 dateRange.forEach { date in
                     dispatch_async(dispatch_get_main_queue()) {
                         self.calendarView.selectDate(date)
                     }
                 }
             }
-            
         }
     }
-    
-    override func viewDidLoad() {
+        override func viewDidLoad() {
         super.viewDidLoad()
         
         loadEventsInCalendar()
@@ -70,8 +80,7 @@ final class CalendarViewController: UIViewController {
             else { return }
         selectedDates = [(firstRedDay, lastRedDay), generateNextDates(firstRedDay, lastRedDay)]
     }
-    
-    override func viewDidLayoutSubviews() {
+        override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
         let width = view.frame.size.width - 16.0 * 2
@@ -82,8 +91,7 @@ final class CalendarViewController: UIViewController {
         calendarView.frame = CGRect(x: 16.0, y: navigationBarHeight + statusBarHeight,
                                     width: width, height: height)
     }
-    
-    func loadEventsInCalendar() {
+        func loadEventsInCalendar() {
         guard let startDate = startDate(), endDate = endDate() else { return }
         
         let store = EKEventStore()
@@ -93,8 +101,7 @@ final class CalendarViewController: UIViewController {
                 self.calendarView.events = eventsBetweenDates
             }
         }
-        
-        if EKEventStore.authorizationStatusForEntityType(.Event) != .Authorized {
+                if EKEventStore.authorizationStatusForEntityType(.Event) != .Authorized {
             store.requestAccessToEntityType(.Event) { granted, _ in
                 if granted { fetchEvents() }
             }
@@ -102,16 +109,13 @@ final class CalendarViewController: UIViewController {
             fetchEvents()
         }
     }
-    
-    @IBAction func doneButtonPressed(sender: AnyObject) {
+        @IBAction func doneButtonPressed(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
     }
-    
-    @IBAction func refreshButtonPressed(sender: AnyObject) {
+        @IBAction func refreshButtonPressed(sender: AnyObject) {
         alertController("Обновить", message: "Вы уверены что хотите обновить данные?", isBackButton: true)
     }
 }
-
 extension CalendarViewController: CalendarViewDataSource, CalendarViewDelegate {
     func startDate() -> NSDate? {
         calendarView.userInteractionEnabled = true
@@ -128,8 +132,7 @@ extension CalendarViewController: CalendarViewDataSource, CalendarViewDelegate {
         dateComponents.year = 2;
         return self.calendarView.gregorian.dateByAddingComponents(dateComponents, toDate: NSDate(), options: NSCalendarOptions())
     }
-    
-    private func onDateSelect(date: NSDate) {
+        private func onDateSelect(date: NSDate) {
         guard var firstSelectedDates = selectedDates?.first else {
             self.selectedDates = [(date, nil)]
             return
@@ -158,7 +161,6 @@ extension CalendarViewController: CalendarViewDataSource, CalendarViewDelegate {
             selectedDates?.append(generateNextDates(startDate, endDate))
         }
     }
-    
     private func generateNextDates(intialStartDate: NSDate, _ intialEndDate: NSDate, negative: Bool = false) -> (NSDate?, NSDate?) {
         let endStartDateDaysDelta = intialEndDate.daysFrom(intialStartDate)
         let newStartDate = intialStartDate.dateByAddingDays(negative ? -cycle : cycle)

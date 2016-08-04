@@ -20,8 +20,12 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainButton" translatesAutoresizingMaskIntoConstraints="NO" id="L50-Sc-zo7">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="233" id="3vK-kY-TN7"/>
-                        <constraint firstAttribute="width" constant="240" id="raj-F7-mzm"/>
+                        <constraint firstAttribute="height" constant="233" id="3vK-kY-TN7">
+                            <variation key="widthClass=compact" constant="96"/>
+                        </constraint>
+                        <constraint firstAttribute="width" constant="240" id="raj-F7-mzm">
+                            <variation key="widthClass=compact" constant="107"/>
+                        </constraint>
                     </constraints>
                     <variation key="default">
                         <mask key="constraints">
@@ -39,8 +43,12 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="L50-Sc-zo7" secondAttribute="trailing" constant="95" id="BlM-b0-zNz"/>
-                <constraint firstItem="L50-Sc-zo7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="77" id="Tl0-aQ-CrE"/>
+                <constraint firstAttribute="trailing" secondItem="L50-Sc-zo7" secondAttribute="trailing" constant="95" id="BlM-b0-zNz">
+                    <variation key="widthClass=compact" constant="180"/>
+                </constraint>
+                <constraint firstItem="L50-Sc-zo7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="77" id="Tl0-aQ-CrE">
+                    <variation key="widthClass=compact" constant="140"/>
+                </constraint>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

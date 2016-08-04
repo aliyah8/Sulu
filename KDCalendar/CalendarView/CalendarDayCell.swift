@@ -6,7 +6,7 @@
 
 import UIKit
 
-let cellColorDefault = UIColor(white: 0.0, alpha: 0.1)
+let cellColorDefault = UIColor(red: 207.0 / 255.0, green: 238.0 / 255.0, blue: 241.0 / 255.0, alpha: 1.0)
 let cellColorToday = UIColor(red: 254.0/255.0, green: 73.0/255.0, blue: 64.0/255.0, alpha: 0.3)
 let borderColor = UIColor(red: 242.0 / 255.0, green: 138.0 / 255.0, blue: 208.0 / 255.0, alpha: 0.76)
     //UIColor.blueColor()
@@ -70,7 +70,7 @@ class CalendarDayCell: UICollectionViewCell {
         didSet {
             
             if selected == true {
-                self.pBackgroundView.layer.borderWidth = 2.0
+                self.pBackgroundView.layer.borderWidth = 10.0
                 
             }
             else {
@@ -86,7 +86,8 @@ class CalendarDayCell: UICollectionViewCell {
         
         let view = UIView(frame: vFrame)
         
-        view.layer.cornerRadius = 4.0
+        view.layer.cornerRadius = 20.0
+
         
         view.layer.borderColor = borderColor.CGColor
         view.layer.borderWidth = 0.0
@@ -130,7 +131,7 @@ class CalendarDayCell: UICollectionViewCell {
        
         let lbl = UILabel()
         lbl.textAlignment = NSTextAlignment.Center
-        lbl.textColor = UIColor.darkGrayColor()
+        lbl.textColor = UIColor(red: 151.0 / 255.0, green: 148.0 / 255.0, blue: 148.0 / 255.0, alpha: 1.0)
         
         return lbl
         
@@ -139,6 +140,8 @@ class CalendarDayCell: UICollectionViewCell {
     lazy var dotsView : UIView = {
         
         let frm = CGRect(x: 8.0, y: self.frame.size.width - 10.0 - 4.0, width: self.frame.size.width - 16.0, height: 12.0)
+      //  self.layer.cornerRadius = frm.size.width/2
+
         let dv = UIView(frame: frm)
         
         

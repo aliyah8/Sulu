@@ -14,9 +14,9 @@ class DictionaryViewController: UIViewController, UITableViewDataSource, UITable
     var definitions : [Definition] = [
         Definition(name: "Что такое цикл?", description: "Менструальный цикл- это время от первого дня месячных до первого дня следующих месячных.", image: "nachalocikla"),
         Definition(name: "Начало цикла.", description: "Твое состояние: Первый день месячных и есть начало твоего уникального цикла.В первые дни ты можешь чувствовать себя растроенной по даже мелким причинам.Могут ощущаться боли внизу живота и тягость. Для того чтобы облегчить симптомы обратись в рубрику полезные советы", image: "woman1"),
-        Definition(name: "Середина цикла", description: "Твое состояние:  Около двух недель после первого дня месячных у тебя наступает овуляция что значит, самый высокий шанс забеременеть", image: "pregnant"),
+        Definition(name: "Середина цикла", description: "Твое состояние:  Около двух недель после первого дня месячных у тебя наступает овуляция что значит, самый высокий шанс забеременеть", image: "middle-of-cycle"),
         Definition(name: "Конец цикла" , description: "Твое состояние: Если у тебя не было оплдотворения , то у тебя должны прийти месячные. Но могут опаздать", image: "woman2"),
-        Definition(name: "Фертильные дни", description: "Это период максимальной готовности женского организма к оплодотворению", image: "")]
+        Definition(name: "Фертильные дни", description: "Это период максимальной готовности женского организма к оплодотворению", image: "pregnant")]
         
     var advices: [Advices] = [
         Advices(name: "Пей как минимум 8 стаканов теплой или горячей воды", emptyname: "", image: "water"),
@@ -24,8 +24,7 @@ class DictionaryViewController: UIViewController, UITableViewDataSource, UITable
         Advices(name: "Положи грелку или горячее полотенце когда тянет низ живота", emptyname: "",  image: "грелка1"),
         Advices(name: "Старайся не есть вредную пищу такие как картошка фри гамбергеры сладкое это усиливает вздутие живота и отеки не пить кофе алкоголь", emptyname: "", image: "junkfood"),
         Advices(name: "Ромашковый или любой другой чай с мятой к вечеру успокаивает", emptyname: "", image: "romasha"),
-        Advices(name: "Поделай легкую зарядку или растяжку", emptyname: "", image: "")
-        
+        Advices(name: "Поделай легкую зарядку или растяжку", emptyname: "", image: "fitness-women")
     
     
     ]
@@ -48,10 +47,10 @@ class DictionaryViewController: UIViewController, UITableViewDataSource, UITable
    var returnValue = 0
         switch(mySegmentedControl.selectedSegmentIndex)
         {
-        case 0:
+        case 1:
             returnValue = definitions.count
             break
-        case 1:
+        case 0:
       //      returnValue = advises.count
             returnValue = advices.count
 
@@ -73,24 +72,23 @@ class DictionaryViewController: UIViewController, UITableViewDataSource, UITable
         
         switch(mySegmentedControl.selectedSegmentIndex)
         {
-        case 0:
+        case 1:
             myCell.nameLabel.text = definitions[indexPath.row].name
-            myCell.nameLabel.font = UIFont(name: "Helvetica", size: 14.0)
+            myCell.nameLabel.font = UIFont(name: "Helvetica", size: 16.0)
             myCell.nameLabel.textColor = UIColor(red: 228.0 / 255.0, green: 84.0 / 255.0, blue: 144.0 / 255.0, alpha: 1.0)
             myCell.definitionLabel.text = definitions[indexPath.row].description
             myCell.imageView?.image = UIImage(named: definitions[indexPath.row].image!)
             break
-        case 1:
+        case 0:
             myCell.nameLabel.text = advices[indexPath.row].emptyname
             myCell.definitionLabel.text = advices[indexPath.row].name
-            myCell.definitionLabel.font = UIFont(name: "Helvetica", size: 14.0)
+            myCell.definitionLabel.font = UIFont(name: "Helvetica", size: 16.0)
             myCell.definitionLabel.textColor = UIColor(red: 228.0 / 255.0, green: 84.0 / 255.0, blue: 144.0 / 255.0, alpha: 1.0)
             myCell.imageView?.image = UIImage(named: advices[indexPath.row].image!)
             
             // local notification
             
-            //      returnValue = advises.count
-            
+            // return advices count
             break
         default:
             break

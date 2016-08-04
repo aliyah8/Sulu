@@ -171,6 +171,7 @@ class CalendarView: UIView, UICollectionViewDataSource, UICollectionViewDelegate
     
     override init(frame: CGRect) {
         super.init(frame : CGRectMake(0.0, 0.0, 200.0, 200.0))
+
         self.initialSetup()
     }
     
@@ -187,7 +188,6 @@ class CalendarView: UIView, UICollectionViewDataSource, UICollectionViewDelegate
     // MARK: Setup
     
     private func initialSetup() {
-        
         
         self.clipsToBounds = true
         
@@ -492,10 +492,11 @@ class CalendarView: UIView, UICollectionViewDataSource, UICollectionViewDelegate
         }
         
         delegate?.calendar?(self, didDeselectDate: selectedDates[index])
-        
+        if index < selectedIndexPaths.count {
         selectedIndexPaths.removeAtIndex(index)
+        } else {
         selectedDates.removeAtIndex(index)
-        
+        }
     }
    
     
