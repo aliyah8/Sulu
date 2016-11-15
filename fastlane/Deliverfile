@@ -1,0 +1,23 @@
+###################### More Options ######################
+# If you want to have even more control, check out the documentation
+# https://github.com/fastlane/deliver/blob/master/Deliverfile.md
+
+
+###################### Automatically generated ######################
+# Feel free to remove the following line if you use fastlane (which you should)
+
+username "info@n17r.com" # your Apple ID user
+app_version "1.0"
+app_icon "./fastlane/metadata/AppIcon.png"
+metadata_path "./fastlane/metadata"
+screenshots_path "./fastlane/screenshots"
+app_rating_config_path "./fastlane/rating_config.json"
+ipa "./fastlane/build/App.ipa"
+price_tier 0
+app_review_information(
+  first_name: "Aliya",
+  last_name: "Tyshkanbayeva",
+  phone_number: "+77026428372",
+  email_address: "misstyshkanbayeva@gmail.com"
+)
+automatic_release false

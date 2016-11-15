@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Advises</key>
+	<array>
+		<dict>
+			<key>image</key>
+			<string></string>
+			<key>name-ru</key>
+			<string></string>
+			<key>name-kz</key>
+			<string></string>
+			<key>description-ru</key>
+			<string>Кем дегенде 8 шыны жылы немесе ыстық су іш</string>
+			<key>description-kz</key>
+			<string>Пей как минимум 8 стаканов теплой или горячей воды в день</string>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string></string>
+			<key>name-ru</key>
+			<string></string>
+			<key>name-kz</key>
+			<string></string>
+			<key>description-ru</key>
+			<string>Сүт тағамдары мен құрамында кальций көп  шпинат секілді жасыл тағамдарды көбірек жесең, ауырлық сезімі азаяды</string>
+			<key>description-kz</key>
+			<string>Молочные продукты и зелень, такие как шпинат, содержат кальций, который уменьшает боли во время менструации</string>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string></string>
+			<key>name-ru</key>
+			<string></string>
+			<key>name-kz</key>
+			<string></string>
+			<key>description-ru</key>
+			<string>Іш асты тартып ауырғанда ыстық орамал немесе ыстық суға толған сауытты («грелка») үстіне сал</string>
+			<key>description-kz</key>
+			<string>Положи грелку или горячее полотенце, когда тянет низ живота</string>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string></string>
+			<key>name-ru</key>
+			<string></string>
+			<key>name-kz</key>
+			<string></string>
+			<key>description-ru</key>
+			<string>Зиян тамақты ішпеуге тырыс. Тіпті өте қаласаң да фри картобы, гамбургерлер,тәтті тағамдардан бас тарт, өйткені олар  іштің кебуі мен ісінуін күшейтеді</string>
+			<key>description-kz</key>
+			<string>Старайся не есть вредную еду и не пить кофе/алкоголь, а также не советуется есть соленую и острую пищу, так как всё это усиливает вздутие живота и могут начаться отеки. </string>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string></string>
+			<key>name-ru</key>
+			<string></string>
+			<key>name-kz</key>
+			<string></string>
+			<key>description-ru</key>
+			<string>Кешке қабылданған  түймедақ немесе кез-келген жалбыз қосылған шай тынышталдырадыРомашковый или мятные чаи успокаивают и можете выпить их вечером, что хорошо отразится на самочувствии</string>
+			<key>description-kz</key>
+			<string>Ромашковый или мятные чаи успокаивают и можете выпить их вечером, что хорошо отразится на самочувствии</string>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string></string>
+			<key>name-ru</key>
+			<string></string>
+			<key>name-kz</key>
+			<string></string>
+			<key>description-kz</key>
+			<string>Поделай легкую зарядку или растяжку</string>
+			<key>description-ru</key>
+			<string>Жеңіл жаттығуларды жасап көр</string>
+		</dict>
+	</array>
+	<key>Pets</key>
+	<array>
+		<dict>
+			<key>image</key>
+			<string>nachalo-image</string>
+			<key>name-ru</key>
+			<string>Начало цикла</string>
+			<key>name-kz</key>
+			<string>Менструальді циклдің бастамасы</string>
+			<key>description-ru</key>
+			<string>Менструальный цикл- это время от первого дня месячных до первого дня следующих месячных</string>
+			<key>description-kz</key>
+			<string>Бірінші күндері сен өз көңіл-күйіңнің босауын байқауың, тіпті ұсақ себептерден ренжінгіш болуың мүмкін.  Белің ауырып, ішінің астында ауырлық сезім пайда бола алады. Осы белгілерді сезіне бастасаң, пайдалы кеңестер айдарын тексер</string>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>seredina-image</string>
+			<key>name-ru</key>
+			<string>Середина цикла</string>
+			<key>name-kz</key>
+			<string>Циклдің ортасы</string>
+			<key>description-ru</key>
+			<string>Твое состояние:  Около двух недель после первого дня месячных у тебя наступает овуляция что значит, самый высокий шанс забеременеть</string>
+			<key>description-kz</key>
+			<string>Сенің  қалпың: Етеккір келуінің бірінші күнінен соң сенде овуляция кезеңі басталады. Овуляция дегенің, жүкті болу мүмкіндігінің жоғары ықтималдығы. Контрацепция (жүкті болып қалудан сақтау құралдары) жайлы ұмытпа.  Мысалы, егер сенде етеккір 4-мамырда басталып, 8-9ына қарай аяқталса, овуляциялық күн шамамен 18-і басталады. Әрбір қыз-келіншекте күн ағза ерекшеліктеріне байланысты өзгере алады. Толығырақ ақпарат алу үшін осында бас. </string>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>konec-image</string>
+			<key>name-ru</key>
+			<string>Конец цикла</string>
+			<key>name-kz</key>
+			<string>Циклдің соңы</string>
+			<key>description-ru</key>
+			<string>Твое состояние: Если у тебя не было оплдотворения , то у тебя должны прийти месячные. Но могут опаздать</string>
+			<key>description-kz</key>
+			<string>Сенің қалпың: Егер жүктілік болмаса, кезекті менструация басталады</string>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>sleepy_cat</string>
+			<key>name-ru</key>
+			<string>Фертильные дни</string>
+			<key>name-kz</key>
+			<string>NUJNO NAZVANIE</string>
+			<key>description-ru</key>
+			<string>Это период максимальной готовности женского организма к оплодотворению</string>
+			<key>description-kz</key>
+			<string>NUJEN TEXT</string>
+		</dict>
+	</array>
+</dict>
+</plist>

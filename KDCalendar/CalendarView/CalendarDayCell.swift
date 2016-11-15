@@ -46,7 +46,7 @@ class CalendarDayCell: UICollectionViewCell {
                 let frm = CGRect(x: (stride+1.0) - halfViewHeight, y: 0.0, width: viewHeight, height: viewHeight)
                 
                 let imageview:UIImageView=UIImageView(frame: frm);
-                let image: UIImage = UIImage(named: "fertile")!
+                let image: UIImage = UIImage(named: "yellowdot")!
                 imageview.image = image
                }
         }
@@ -70,7 +70,7 @@ class CalendarDayCell: UICollectionViewCell {
         didSet {
             
             if selected == true {
-                self.pBackgroundView.layer.borderWidth = 10.0
+                self.pBackgroundView.layer.borderWidth = 8.0
                 
             }
             else {
@@ -160,7 +160,7 @@ class CalendarDayCell: UICollectionViewCell {
         
         super.init(frame: frame)
         flowerImageView.hidden = true
-        flowerImageView.image = UIImage(named: "fertile")
+        flowerImageView.image = UIImage(named: "yellowdot")
         contentView.addSubview(flowerImageView)
 
         

@@ -2,9 +2,6 @@
 //  KDCalendarView.swift
 //  KDCalendar
 //
-//  Created by Michael Michailidis on 02/04/2015.
-//  Copyright (c) 2015 Karmadust. All rights reserved.
-//
 
 import UIKit
 import EventKit
@@ -486,6 +483,28 @@ class CalendarView: UIView, UICollectionViewDataSource, UICollectionViewDelegate
         
     }
     
+    func unflowerAll() {
+        flowerDates.removeAll()
+        
+        flowerIndexPaths.forEach {
+            guard let cell = self.calendarView.cellForItemAtIndexPath($0) as? CalendarDayCell else { return }
+            cell.flower = false
+        }
+        
+        flowerIndexPaths.removeAll()
+    }
+    
+    func deselectAll() {
+        selectedDates.removeAll()
+        
+        selectedIndexPaths.forEach {
+            guard let cell = self.calendarView.cellForItemAtIndexPath($0) as? CalendarDayCell else { return }
+            cell.selected = false
+        }
+        
+        selectedIndexPaths.removeAll()
+    }
+    
     func indexPathForDate(date : NSDate) -> NSIndexPath? {
         
         let distanceFromStartComponent = self.gregorian.components( [.Month, .Day], fromDate:startOfMonthCache, toDate: date, options: NSCalendarOptions() )
@@ -504,8 +523,9 @@ class CalendarView: UIView, UICollectionViewDataSource, UICollectionViewDelegate
     
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-    
+        //let dropwords = "Первый день цикла добавился"
         
+    
         
         guard let dateBeingSelectedByUser = dateBeingSelectedByUser else {
             return

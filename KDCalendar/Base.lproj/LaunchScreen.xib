@@ -17,59 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                     </variation>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainButton" translatesAutoresizingMaskIntoConstraints="NO" id="L50-Sc-zo7">
-                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="233" id="3vK-kY-TN7">
-                            <variation key="widthClass=compact" constant="96"/>
-                        </constraint>
-                        <constraint firstAttribute="width" constant="240" id="raj-F7-mzm">
-                            <variation key="widthClass=compact" constant="107"/>
-                        </constraint>
-                    </constraints>
-                    <variation key="default">
-                        <mask key="constraints">
-                            <exclude reference="3vK-kY-TN7"/>
-                            <exclude reference="raj-F7-mzm"/>
-                        </mask>
-                    </variation>
-                    <variation key="widthClass=compact">
-                        <mask key="constraints">
-                            <include reference="3vK-kY-TN7"/>
-                            <include reference="raj-F7-mzm"/>
-                        </mask>
-                    </variation>
-                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstAttribute="trailing" secondItem="L50-Sc-zo7" secondAttribute="trailing" constant="95" id="BlM-b0-zNz">
-                    <variation key="widthClass=compact" constant="180"/>
-                </constraint>
-                <constraint firstItem="L50-Sc-zo7" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="77" id="Tl0-aQ-CrE">
-                    <variation key="widthClass=compact" constant="140"/>
-                </constraint>
-            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <variation key="default">
                 <mask key="subviews">
                     <exclude reference="DUW-BF-lb8"/>
-                    <exclude reference="L50-Sc-zo7"/>
-                </mask>
-                <mask key="constraints">
-                    <exclude reference="BlM-b0-zNz"/>
-                    <exclude reference="Tl0-aQ-CrE"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
                 <mask key="subviews">
                     <include reference="DUW-BF-lb8"/>
-                    <include reference="L50-Sc-zo7"/>
-                </mask>
-                <mask key="constraints">
-                    <include reference="BlM-b0-zNz"/>
-                    <include reference="Tl0-aQ-CrE"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="548" y="455"/>
@@ -77,6 +36,5 @@
     </objects>
     <resources>
         <image name="Base" width="375" height="667"/>
-        <image name="mainButton" width="273" height="261"/>
     </resources>
 </document>

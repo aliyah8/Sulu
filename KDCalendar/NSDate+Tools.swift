@@ -46,6 +46,15 @@ extension NSDate {
         return calendar.dateByAddingUnit(.Day, value: days, toDate: self, options: NSCalendarOptions())!
     }
     
+    func dateByAddingOneMonth() -> NSDate {
+        var nextDate = self
+        let currentMonth = nextDate.month
+        while currentMonth == nextDate.month {
+            nextDate = nextDate.dateByAddingDays(1)
+        }
+        return nextDate
+    }
+    
     var day: Int {
         let calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
         calendar.timeZone = NSTimeZone.systemTimeZone()
@@ -56,6 +65,11 @@ extension NSDate {
         calendar.timeZone = NSTimeZone.systemTimeZone()
         return calendar.component(.Month, fromDate: self)
     }
+    var year: Int {
+        let calendar = NSCalendar(calendarIdentifier: NSCalendarIdentifierGregorian)!
+        calendar.timeZone = NSTimeZone.systemTimeZone()
+        return calendar.component(.Year, fromDate: self)
+    }
     var dayBefore: NSDate {
         return dateByAddingDays(-1)
     }
@@ -63,6 +77,14 @@ extension NSDate {
 
 func < (left: NSDate, right: NSDate) -> Bool {
     return left.compare(right) == NSComparisonResult.OrderedAscending
+}
+
+func > (left: NSDate, right: NSDate) -> Bool {
+    return left.compare(right) == NSComparisonResult.OrderedDescending
+}
+
+func == (left: NSDate, right: NSDate) -> Bool {
+    return left.year == right.year && left.month == right.month && left.day == right.day
 }
 
 struct DateRange : SequenceType {

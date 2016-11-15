@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BEFD654E1ACC072000ADE917"
-               BuildableName = "KDCalendar.app"
+               BuildableName = "Sulu.app"
                BlueprintName = "KDCalendar"
                ReferencedContainer = "container:KDCalendar.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BEFD654E1ACC072000ADE917"
-            BuildableName = "KDCalendar.app"
+            BuildableName = "Sulu.app"
             BlueprintName = "KDCalendar"
             ReferencedContainer = "container:KDCalendar.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BEFD654E1ACC072000ADE917"
-            BuildableName = "KDCalendar.app"
+            BuildableName = "Sulu.app"
             BlueprintName = "KDCalendar"
             ReferencedContainer = "container:KDCalendar.xcodeproj">
          </BuildableReference>
@@ -85,7 +85,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BEFD654E1ACC072000ADE917"
-            BuildableName = "KDCalendar.app"
+            BuildableName = "Sulu.app"
             BlueprintName = "KDCalendar"
             ReferencedContainer = "container:KDCalendar.xcodeproj">
          </BuildableReference>

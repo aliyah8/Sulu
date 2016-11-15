@@ -9,8 +9,7 @@ import EventKit
 
 final class CalendarViewController: UIViewController {
     private let cycle = 28
-    private var flag = false
-    private var previousMonth = 0
+    private var previousDate: NSDate?
     
     @IBOutlet private weak var calendarView: CalendarView! {
         didSet {
@@ -49,19 +48,17 @@ final class CalendarViewController: UIViewController {
                 let startFlowerDate = endDate.dateByAddingDays(0),
                     endFlowerDate = startDate.dateByAddingDays(16)
                 let flowerRange = DateRange(calendar: calendar, startDate: startFlowerDate, endDate: endFlowerDate, stepUnits: .Day, stepValue: 1)
-
+                //saving data
+               // let defaults = NSUserDefaults.standardUserDefaults()
+                //defaults.setObject(startFlowerDate, forKey: "startFlowerDate")
+              //  defaults.setObject(endFlowerDate, forKey: "endFlowerDate")
+                
                 flowerRange.forEach{ flower in
-                    calendarView.flowerDate(flower)
+                    dispatch_async(dispatch_get_main_queue()) {
+                    self.calendarView.flowerDate(flower)
+                    }
                 }
-                
-          //      }
-                //    guard let startFlowerDate = $0.endDate!.dateByAddingDays(0),
-              //      endFlowerDate = $0.startDate!.dateByAddingDays(16) else { return }
-               // let flowerRange = DateRange(calendar: calendar, startDate: startFlowerDate, endDate: endFlowerDate, stepUnits: .Day, stepValue: 1)
-                
-                //flowerRange.forEach { self.calendarView.selectDate($0) }
-               // print(flowerRange)
-                
+            
                 dateRange.forEach { date in
                     dispatch_async(dispatch_get_main_queue()) {
                         self.calendarView.selectDate(date)
@@ -91,6 +88,11 @@ final class CalendarViewController: UIViewController {
             lastRedDay = defaults.objectForKey("lastRedDay") as? NSDate
             else { return }
         selectedDates = [(firstRedDay, lastRedDay), generateNextDates(firstRedDay, lastRedDay)]
+            
+           // guard let startFlowerDate = defaults.objectForKey("startFlowerDate") as? NSDate,
+        //    endFlowerDate = defaults.objectForKey("endFlowerDate") as? NSDate
+            //     else {return}
+
     }
         override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -146,10 +148,14 @@ extension CalendarViewController: CalendarViewDataSource, CalendarViewDelegate {
     }
         private func onDateSelect(date: NSDate) {
         guard var firstSelectedDates = selectedDates?.first else {
+            // first 
+            Drop.down("Первый день цикла добавился", state: .Success)
+            
             self.selectedDates = [(date, nil)]
             return
         }
-        
+            Drop.down("Последний день цикла добавился", state: .Success)
+            // second
         if let startDate = firstSelectedDates.startDate, endDate = firstSelectedDates.startDate {
             if date.day < startDate.day {
                 firstSelectedDates.startDate = date
@@ -157,10 +163,11 @@ extension CalendarViewController: CalendarViewDataSource, CalendarViewDelegate {
                 firstSelectedDates.endDate = date
             }
         
-
             let defaults = NSUserDefaults.standardUserDefaults()
             defaults.setObject(firstSelectedDates.startDate, forKey: "firstRedDay")
             defaults.setObject(firstSelectedDates.endDate, forKey: "lastRedDay")
+            defaults.synchronize()
+        
             
         } else if let _ = firstSelectedDates.startDate {
             firstSelectedDates.endDate = date
@@ -191,31 +198,88 @@ extension CalendarViewController: CalendarViewDataSource, CalendarViewDelegate {
     }
     
     func calendar(calendar: CalendarView, didScrollToMonth date : NSDate) {
-        guard let startDate = selectedDates?.last?.startDate,
-            endDate = selectedDates?.last?.endDate
-            where selectedDates?.count > 1 && flag && previousMonth != date.month else {
-                flag = true
-                return
+        let date2 = date.dateByAddingDays(1).dateByAddingOneMonth().dateByAddingDays(1)
+        var selectedDates = self.selectedDates
+        while let firstEndDate = selectedDates?.first?.endDate,
+            secondStartDate = selectedDates?.last?.startDate, secondEndDate = selectedDates?.last?.endDate
+            where firstEndDate < date || firstEndDate == date {
+
+            let newStartDate = secondStartDate.dateByAddingDays(cycle)
+            let newEndDate = secondEndDate.dateByAddingDays(cycle)
+            
+            selectedDates = [(secondStartDate, secondEndDate), (newStartDate, newEndDate)]
+            
         }
         
-        previousMonth = date.month
+        while let firstStartDate = selectedDates?.first?.startDate, firstEndDate = selectedDates?.first?.endDate,
+            secondStartDate = selectedDates?.last?.startDate
+            where secondStartDate > date2 || secondStartDate == date2 {
+
+                let newStartDate = firstStartDate.dateByAddingDays(-cycle)
+                let newEndDate = firstEndDate.dateByAddingDays(-cycle)
+
+                selectedDates = [(newStartDate, newEndDate), (firstStartDate, firstEndDate)]
+                
+        }
         
-        let numberOfDays = startDate < date ? cycle : -cycle
-        let newStartDate = startDate.dateByAddingDays(numberOfDays)
-        let newEndDate = endDate.dateByAddingDays(numberOfDays)
+        self.calendarView.unflowerAll()
+        self.calendarView.deselectAll()
+        self.selectedDates?.removeAll()
+        self.selectedDates = selectedDates
         
-        selectedDates = numberOfDays > 0
-            ? [(startDate, endDate), (newStartDate, newEndDate)]
-            : [generateNextDates(newStartDate, newEndDate, negative: true), (newStartDate, newEndDate)]
+//        guard let previousDate = previousDate,
+//            firstStartDate = selectedDates?.first?.startDate,
+//            firstEndDate = selectedDates?.first?.endDate,
+//            secondStartDate = selectedDates?.last?.startDate,
+//            secondEndDate = selectedDates?.last?.endDate
+//            where previousDate.month != date.month else {
+//                self.previousDate = date
+//                return
+//        }
+        
+//        if previousDate < date {
+//            
+//            while let tmp = selectedDates?.last?.startDate where tmp.dateByAddingDays(cycle).month == date.month {
+//                let newStartDate = secondStartDate.dateByAddingDays(cycle)
+//                let newEndDate = secondEndDate.dateByAddingDays(cycle)
+//                
+//                selectedDates = [(secondStartDate, secondEndDate), (newStartDate, newEndDate)]
+//                
+//            }
+//            
+//            print ("generated next month\n\(selectedDates?.first)\n\(selectedDates?.last)\n")
+//        } else {
+//            let numberOfDays = -cycle
+//            let newStartDate = secondStartDate.dateByAddingDays(numberOfDays)
+//            let newEndDate = secondEndDate.dateByAddingDays(numberOfDays)
+//            
+//            selectedDates = [generateNextDates(newStartDate, newEndDate, negative: true), (firstStartDate, firstEndDate)]
+//            print ("generated previous month\n\(selectedDates?.first)\n\(selectedDates?.last)\n")
+//        }
+//        
+//        self.previousDate = date
+        
+        
+        
+//        let numberOfDays = startDate < date ? cycle : -cycle
+//        let newStartDate = startDate.dateByAddingDays(numberOfDays)
+//        let newEndDate = endDate.dateByAddingDays(numberOfDays)
+//        
+//        selectedDates = numberOfDays > 0
+//            ? [(startDate, endDate), (newStartDate, newEndDate)]
+//            : [generateNextDates(newStartDate, newEndDate, negative: true), (newStartDate, newEndDate)]
     }
 }
 
 extension CalendarViewController: AlertShowable {
     func confirmationButtonTapped() {
+        calendarView.unflowerAll()
+        calendarView.deselectAll()
         selectedDates?.removeAll()
         
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.removeObjectForKey("firstRedDay")
         defaults.removeObjectForKey("lastRedDay")
+        defaults.synchronize()
     }
 }
